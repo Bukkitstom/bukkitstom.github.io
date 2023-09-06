@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'Group Manager',
-                to: '/docs/groupmanager',
+                to: '/docs/intro',
               },
             ],
           },
