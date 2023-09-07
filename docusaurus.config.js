@@ -38,11 +38,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/bukkitstom/bukkitstom.github.io/tree/master/',
         },
         blog: false,
         theme: {
@@ -65,10 +67,37 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Group Manager',
+            label: 'Resources',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'groupManagerSidebar',
+                label: 'Group Manager',
+              },
+            ]
+          },
+          {
+            position: 'left',
+            label: 'Libraries',
+            items: [
+              
+            ]
+          },
+          {
+            position: 'left',
+            label: 'Templates',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'extensionTemplateSidebar',
+                label: 'Minestom Extension Template',
+              },
+            ]
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -86,7 +115,11 @@ const config = {
             items: [
               {
                 label: 'Group Manager',
-                to: '/docs/intro',
+                to: '/docs/groupmanager/intro',
+              },
+              {
+                label: 'Minestom Extension Template',
+                to: '/docs/extensiontemplate/intro',
               },
             ],
           },
@@ -120,6 +153,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    themes: [
+      [
+        require.resolve("@easyops-cn/docusaurus-search-local"),
+        /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+        ({
+          // ... Your options.
+          // `hashed` is recommended as long-term-cache of index file is possible.
+          hashed: true,
+          // For Docs using Chinese, The `language` is recommended to set to:
+          // ```
+          // language: ["en", "zh"],
+          // ```
+        }),
+      ],
+    ]
 };
 
 module.exports = config;
