@@ -115,11 +115,11 @@ const config = {
             items: [
               {
                 label: 'Group Manager',
-                to: '/docs/groupmanager/intro',
+                to: '/docs/groupmanager',
               },
               {
                 label: 'Minestom Extension Template',
-                to: '/docs/extensiontemplate/intro',
+                to: '/docs/extensiontemplate',
               },
             ],
           },
@@ -151,6 +151,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['java'],
       },
     }),
     themes: [
