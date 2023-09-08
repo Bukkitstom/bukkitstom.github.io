@@ -12,27 +12,16 @@ Simple template for creating Minestom extensions.
 
 Go to the [repository template link](https://github.com/new?template_name=MinestomExtensionTemplate&template_owner=Bukkitstom), fill out the questions, press <ins>Create Repository</ins> and your brand new repository is ready to go!
 
-## Rebranding using a script
+## Rebranding automatically
 
-Automatically rebrand your project using a **python script**. 
+### Using the github workflow
 
-### What you'll need
+Go to your new github repository and run the ``rebrand`` workflow. 
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Using a script
 
-### Usage
-
-Run the python script which will ask questions about your project:
-
-```bash
-node rebrand.js
-```
+Grab the [latest artifact from rebrander](https://github.com/Bukkitstom/rebrander/actions/workflows/build.yml), run it, and fill out the questions.
 
 ## Rebrand manually
-
-### What you'll need
-
-- **Nothing!**
 
 TODO
